@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Logical Operators</h2>
+        <p>Logical AND OR and NOT</p>
+        <p id="demo"></p>
+        <p id="ordemo"></p>
+        <p id="notdemo"></p>
+        <script>
+        //Logical Operators are: &&(and),||(or),!(not)
+        let x = 6;
+        let y = 3;
+
+        document.getElementById("demo").innerHTML = 
+        (x < 10 && y > 1) + "<br>" + 
+         (x < 10 && y < 1);
+
+         document.getElementById("ordemo").innerHTML = 
+         (x == 5 || y == 5) + "<br>" + 
+        (x == 6 || y == 0) + "<br>" + 
+         (x == 0 || y == 3) + "<br>" + 
+          (x == 6 || y == 3);
+
+          document.getElementById("notdemo").innerHTML = 
+          !(x === y) + "<br>" + 
+          !(x > y);
+
+
+
+
+    </script>
+
+    </body>
+</html>

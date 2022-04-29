@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> JavaScript Operators </h2>
+
+        <p id = "Operators"></p>
+        <p id = "instance"></p> 
+        <p id = "addop"></p>
+        <p id="logop"></p>
+    <script>
+        let x= 100;
+        let y = 200;
+        let result = x+y;  
+        document.getElementById("Operators").innerHTML= "Addition of 100 and 200 is " +
+        " "  +  result;    
+
+        console.log("Addition of two numbers 100 and 200 " + result)   ;
+
+
+        let number_one = 7;
+        let number_two = 9;
+        let add = number_one+number_two;
+        let sub = number_one-number_two;
+        let mul = number_one*number_two;
+        let div = number_one/number_two;
+        // Modulous operator
+        let mod = number_one%number_two;
+        // Exponential opetator
+        let expo = number_one**number_two;
+        // Unary operator
+        let postincre= number_one++   ;
+        let preincre = ++number_one;
+        let postdecre = number_one--;
+        let predecre = --number_one;
+        document.getElementById("instance").innerHTML= "JavaScript Operators " +"<br>"+
+        add + "<br/>" + sub + "<br/>" + mul + "<br>" + div + "<br/>" +
+        mod + "<br/>" + expo + "<br/>" + postincre+ "<br/>" + preincre+ "<br/>" +
+        postdecre + "<br/>" + predecre;
+
+             let a=20;
+             a+=5;
+             let b=10;
+             b-=5;
+             let c=30;
+             c*=3
+             let d=35;
+             d/=7;
+             let e=89;
+             e%=5;
+             document.getElementById("addop").innerHTML="The += Operator "+ a+"<br>"+
+             "The -= Operator "+ b+"<br>"+"The *= Operator "+ c+"<br>"+"The /= Operator "+ d+"<br>"+
+             "The %= Operator "+ e+"<br>";
+
+             let num=5;
+             let res=num&1;
+             let res1=num|1;
+             let res2=num^1;
+             let res3=num<<1;
+             let res4=num>>1;
+             let res5=num>>>1;
+
+             document.getElementById("logop").innerHTML="The &= Operator "+ res+"<br>"+
+             "The |= Operator "+ res1+"<br>"+"The ^= Operator "+ res2+"<br>"+"The <<= Operator "+ res3+"<br>"+
+             "The >>= Operator "+ res4+"<br>"+"The >>>= Operator "+ res5+"<br>";
+
+
+         </script> 
+    </body>
+</html>

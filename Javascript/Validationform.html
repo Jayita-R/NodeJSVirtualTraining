@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript FormValidation</title>
+    </head>
+    <body>
+
+        <script>
+            function validationForm(){
+                let x=document.forms["First"]["Firstname"].value;
+                if(x==""){
+                    window.alert("Input can't be empty");
+                    return false;
+                }
+            }
+        </script>
+        <h2>Javascript Validation</h2>
+        <form name="First" action="/action_page.php" onsubmit="return validationForm()" method="POST">
+            Firstname:<input type="text" name="Firstname">
+            <input type="submit">
+        </form>
+    </body>
+</html>

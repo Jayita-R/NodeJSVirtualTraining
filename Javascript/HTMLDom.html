@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript DOM</title>
+    </head>
+    <body>
+        <p>Programming is fun <b>Programming with Jayita</b></p>
+        <p>This is an example to find HTML Tag Name</p>
+        <div id="java">
+            <p>Finding HTML element by Tag Name</p>
+            <p>This is an example to demonstrate <strong>getElementsByTagName</strong></p>
+        </div>
+        
+        <p id="example"></p>
+        <p id="pass">Let's check what happens</p>
+        <p id="demo"></p>
+        
+        <script>
+            const element=document.getElementsByTagName("p");
+            document.getElementById("example").innerHTML=
+            'The letter present in the first paragraph (index 0) is::::'+element[0].innerHTML;
+
+            const a=document.getElementById("java");
+            const y=a.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML=
+            "The first paragraph (index 0) inside 'java tag id' is "+y[0].innerHTML;
+
+            document.getElementById("pass").innerHTML="Programming with Ishita";
+
+            document.write("Javascripting");
+            document.write(Date());
+
+        </script>
+    </body>
+</html>

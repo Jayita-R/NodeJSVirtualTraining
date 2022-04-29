@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Strings</title>
+    </head>
+    <body>
+        <p id="string"></p>
+        <p id="upper">This is an example</p>
+        <p id="lower">This is Jayita</p>
+        <button onclick="toUpperCheck()">Click here</button>
+        <button onclick="toLowerCheck()">Lowercase Check</button>
+        <script>
+            let name="Jayita";
+            document.getElementById("string").innerHTML="The length of the given string is "+name.length;
+
+           document.getElementById("string").innerHTML=name.slice(0,4);
+            document.getElementById("string").innerHTML=name.substring(1,3);
+            function toUpperCheck(){
+                 let text=document.getElementById("upper").innerHTML;
+                 document.getElementById("upper").innerHTML=text.toUpperCase();
+            }
+            function toLowerCheck(){
+                 let text1=document.getElementById("lower").innerHTML;
+                 document.getElementById("lower").innerHTML=text1.toLowerCase();
+            }
+        </script>
+    </body>
+</html>

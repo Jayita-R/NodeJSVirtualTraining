@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4> JavaScript Variables</h4>
+        <p id="var1"></p>
+        <p id="var2"></p>
+        <script>
+            var _carno='HYN3216';
+            var _carname='Hyundai City';
+            document.getElementById("var1").innerHTML="The car no is "+_carno
+            +" and the car name is "+_carname;
+
+            var $num=734;
+            var h=$num;
+            var sum=0,rem;
+            while($num!=0){
+                rem=$num%10;
+                sum=sum+rem;
+                $num=Math.floor($num/10);
+            }
+            document.getElementById("var2").innerHTML="Sum of digits of the number "+h+" is "+sum;
+
+
+        </script>
+    </body>
+</html>

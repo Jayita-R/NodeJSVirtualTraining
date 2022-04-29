@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Asyn More Examples</title>
+    </head>
+    <body>
+        <p id="server"></p>
+        <script>
+              function display(param){
+                  document.getElementById("server").innerHTML=param;
+              }
+              function getfile(send){
+                  let request=new XMLHttpRequest();
+                  request.open('GET','https://en.wikipedia.org/wiki/Dinosaur');
+                  request.onload=function(){
+                      if(request.status==200){
+                          send(this.responseText);
+                      }
+                      else{
+                          send("Error: "+request.status);
+                      }
+                  }
+                  request.send();
+              }
+              getfile(display);
+        </script>
+    </body>
+</html>

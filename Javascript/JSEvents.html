@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Events</title>
+    </head>
+    <body onload="loadFunction()">
+      <button onclick="document.getElementById('demo').innerHTML=Date()">The current date is?</button>
+      <p id="demo"></p>
+      <p>Please enter some text to see the onchange event functioning</p>
+
+      Enter some text: <input type="text" name="txt" value="hello" onchange="myFunction(this.value)">
+
+      <script>
+        function myFunction(value) {
+          alert("Input value is changed. New value is " + value);
+        }
+        </script>
+        <h1>Hello Jayita!</h1>
+        <script>
+            function loadFunction() {
+              alert("Page is loaded");
+            }
+            </script>
+
+    </body>
+</html>

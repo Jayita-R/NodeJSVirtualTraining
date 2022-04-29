@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> JavaScript For In & Nested For loop </h2>
+        <p id="demo"></p>
+        <script>
+                const numbers = [5, 2, 7, 10, 35];
+
+                 let text = "";
+                 for (a in numbers) {
+                    text += numbers[a] + "<br>"; 
+                }
+
+               document.getElementById("demo").innerHTML = text;
+
+               for(i=1;i<=10;i++){
+                   for(j=1;j<=i;j++){
+                       document.write("* ");
+                   }
+                   document.write("<br>");
+               }
+               for(i=10;i>=1;i--){
+                   for(j=1;j<=i;j++){
+                       document.write("J ");
+                   }
+                   document.write("<br>");
+               }
+        </script>
+    </body>
+</html>

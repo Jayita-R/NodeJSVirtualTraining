@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Object</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="objects"></p>
+        <p id="object"></p>
+        <p id="objec"></p>
+        <script>
+            let cart="Range Rover";
+            document.getElementById("objects").innerHTML=cart;
+            const car={
+                name:"Range Rover",
+                type:"Manual",
+                model:"2021",
+                color:"White"
+            };
+            document.getElementById("objects").innerHTML="The car name is: "+car.name;
+            document.getElementById("object").innerHTML="The car type is: "+car.type;
+            document.getElementById("objec").innerHTML="The car model is: "+car.model;
+
+            const currency={
+                India:"Indian Rupees",
+                USA:"US Dollars",
+                London:"Pounds",
+                Japan:"Yen"
+            };
+            document.getElementById("demo").innerHTML="Indian Currency name is: "+currency.India;
+
+            const person={
+                firstname:"Jayita",
+                lastname:"Rakshit",
+                id:123456,
+                city:"Kolkata",
+                pin:111666,
+                fullname:function(){
+                   return this.firstname+" "+this.lastname;
+                }
+            };
+            document.getElementById("demo1").innerHTML="My fullname is "+person.fullname();
+
+        </script>
+    </body>
+</html>
