@@ -1,0 +1,10 @@
+Programming is Fun!
+
+This is a text file.
+
+
+This is a input.txt file.
+
+
+This sentence is changed later.
+And this is rendered from the input.txt file.
